@@ -1,0 +1,142 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.home_wrapper {
+	display: grid;
+	.header {
+		display: grid;
+		height: 120px;
+		widows: 100%;
+		background-color: green;
+		background: url("../assets/logo-bg.png");
+		grid-template-columns: 150px 1fr 1fr;
+
+		.logo {
+			display: grid;
+
+			align-self: center;
+			justify-self: center;
+		}
+
+		.logo_name {
+			display: grid;
+			grid-template-rows: 1fr 1fr;
+
+			.logo_name1 {
+				display: grid;
+				align-self: end;
+				font-family: "Merriweather", sans-serif;
+				font-size: 28px;
+
+				color: #ffffff;
+				text-align: left;
+			}
+			.logo_name2 {
+				align-self: top;
+				font-family: "Merriweather", sans-serif;
+				font-size: 15px;
+				color: #ffffff;
+				text-align: left;
+			}
+		}
+	}
+
+	.intro {
+		display: grid;
+		height: 180px;
+		width: 100%;
+		grid-template-columns: 70% 30%;
+
+		.intro1 {
+			display: grid;
+			font-family: "Merriweather", sans-serif;
+			font-size: 18px;
+			color: #797979;
+			text-align: center;
+			align-self: center;
+			padding: 50px;
+		}
+		.intro2 {
+			display: grid;
+			font-family: "Merriweather", sans-serif;
+			font-size: 15px;
+			text-align: center;
+			display: grid;
+			grid-template-rows: 80px 60px 30px;
+			color: #797979;
+
+			div:first-child {
+				display: grid;
+				align-self: flex-end;
+				font-size: 22px;
+				text-decoration: underline;
+				font-weight: 700;
+			}
+
+			div:nth-child(2) {
+				display: grid;
+				align-self: center;
+				font-size: 34px;
+				font-family: "Roboto";
+			}
+
+			div:nth-child(3) {
+				display: grid;
+				align-self: flex-end;
+				font-size: 14px;
+				opacity: 0.7;
+				align-self: auto;
+				font-family: "Roboto";
+			}
+		}
+	}
+}
+
+.fab {
+	position: fixed;
+	z-index: 9999;
+	right: 20px;
+	bottom: 20px;
+}
+
+.btn {
+	width: auto;
+	background-color: #f2f2f2;
+	height: auto;
+	border-radius: 24px;
+	display: flex;
+	align-items: center;
+	padding-right: 12px;
+	font-size: 20px;
+
+	box-shadow: 0 8px 6px -6px rgb(121, 121, 121);
+}
+
+a {
+	color: #000000;
+} /* Unvisited link  */
+a:visited {
+	color: #000000;
+} /* Visited link    */
+a:hover {
+	color: grey;
+} /* Mouse over link */
+a:active {
+	color: grey;
+} /* Selected link   */
+
+a,
+u {
+	text-decoration: none;
+}
+
+.call {
+	font-size: 16px;
+}
+
+.num {
+	font-size: 22px;
+}
